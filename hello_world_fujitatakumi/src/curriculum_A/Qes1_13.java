@@ -325,13 +325,13 @@ public class Qes1_13 {
 		System.out.println("初めまして" + name + "です");
 						
 		//年齢 2でかける
-		System.out.println("年齢は" + (age * 2) + "歳です");
+		System.out.println("年齢は" + (age + age) + "歳です");
 						
 		//身長 2でかける
-		System.out.println("身長は" + (tall * 2) + "cmです");
+		System.out.println("身長は" + (tall + tall) + "cmです");
 						
 		//体重 2でかける
-		System.out.println("体重は" + (bodyWeight * 2) + "kgです");
+		System.out.println("体重は" + (bodyWeight + bodyWeight) + "kgです");
 						
 		//食べ物
 		System.out.println("好きな食べ物は" + food + "です");
@@ -394,12 +394,12 @@ public class Qes1_13 {
 		 */
 		
 		//boolean型の作成
-		boolean isOverTwentyFiveAndOverOneSixO = true;
+		boolean isResult = true;
 		
 		//問12のageInt,tallDoubleを元に条件式の作成
-		isOverTwentyFiveAndOverOneSixO = (ageInt >= 25 & tallDouble >=160);
+		isResult = (ageInt >= 25 & tallDouble >=160);
 		
 		//結果をコンソールに出力
-		System.out.println(isOverTwentyFiveAndOverOneSixO);
+		System.out.println(isResult);
 	}
 }
