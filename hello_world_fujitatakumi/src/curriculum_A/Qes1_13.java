@@ -319,31 +319,44 @@ public class Qes1_13 {
 		 * 　BMIは11.31です
 		 */
 		
-		//以下、和算とコンソールに出力する処理
+		//年齢、身長、体重に自己代入
+		age = age +24;
+		
+		tall = tall + 168.5;
+		
+		bodyWeight = bodyWeight + 64.2;
+		
+		bmiResult = bmiResult / 2 + 0.01;
+		
+		//以下、コンソールに出力する処理
 		
 		//名前
 		System.out.println("初めまして" + name + "です");
 						
-		//年齢 2でかける
-		System.out.println("年齢は" + (age + age) + "歳です");
+		//年齢 
+		System.out.println("年齢は" + age + "歳です");
 						
-		//身長 2でかける
-		System.out.println("身長は" + (tall + tall) + "cmです");
+		//身長
+		System.out.println("身長は" + tall + "cmです");
 						
-		//体重 2でかける
-		System.out.println("体重は" + (bodyWeight + bodyWeight) + "kgです");
+		//体重
+		System.out.println("体重は" + bodyWeight + "kgです");
 						
 		//食べ物
 		System.out.println("好きな食べ物は" + food + "です");
 				
-		//BMI 2で割って0.01を足す
-		System.out.println("BMIは" + (bmiResult / 2 + 0.01) + "です");
+		//BMI
+		System.out.println("BMIは" + bmiResult + "です");
 		
 		
 		
 		
 		
 		//(10)8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+		
+		//(9)で年齢の数字を触ったので、元に戻す
+		
+		age = age - 24;
 		
 		//boolean型の作成
 		boolean isOverTwentyFive = true;
@@ -359,6 +372,12 @@ public class Qes1_13 {
 		
 		
 		//(11)8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
+		
+		//(9)で身長、体重を触ったので元に戻す
+		
+		tall = tall - 168.5;
+		
+		bodyWeight = bodyWeight - 64.2;
 		
 		//String.valueOfを使用してage,tall,bodyWeightを文字列型に変換
 		String ageStr = String.valueOf(age);
@@ -397,7 +416,7 @@ public class Qes1_13 {
 		boolean isResult = true;
 		
 		//問12のageInt,tallDoubleを元に条件式の作成
-		isResult = (ageInt >= 25 & tallDouble >=160);
+		isResult = (ageInt == 25 & tallDouble >=160);
 		
 		//結果をコンソールに出力
 		System.out.println(isResult);
