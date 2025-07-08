@@ -6,7 +6,7 @@ import java.util.Scanner;
 //サブクラスをインポート
 import keisyou_syori.Player;
 
-public class K_jikkou {
+public class KeisyouJikkou {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,7 @@ package keisyou_syori;
 
 import java.util.Random;
 
-public class K_syori {
+public class KeisyouSyori {
 	//private String name;
 	private int health;
 	private int magic;
@@ -11,7 +11,7 @@ public class K_syori {
 	private int defense;
 	
 	
-	public K_syori() {
+	public KeisyouSyori() {
         // ステータスをランダムな値で初期化
         Random random = new Random();
         this.health = random.nextInt(1000);

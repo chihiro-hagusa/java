@@ -1,6 +1,6 @@
 package keisyou_syori;
 
-public class Player extends K_syori {
+public class Player extends KeisyouSyori {
 	//スーパークラス K_syori を継承
 		private String name;
 		
