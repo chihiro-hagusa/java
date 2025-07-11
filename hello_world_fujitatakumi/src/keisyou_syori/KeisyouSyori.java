@@ -56,6 +56,19 @@ public class KeisyouSyori {
 	public int getDefense() {
 		return this.defense;
 	}
+
+	//mainでset〇〇を呼び出すためにメソッドを作成
+	public void setHealth() {
+	}
+	public void setMagic() {
+	}
+	public void setAttack() {		
+	}
+	public void setSpeed() {
+	}
+	public void setDefense() {
+	}
+	
 }	
 	
 
