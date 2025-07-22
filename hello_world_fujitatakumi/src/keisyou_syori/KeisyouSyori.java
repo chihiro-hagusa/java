@@ -23,20 +23,15 @@ public class KeisyouSyori {
 	
 	
 	//setterの設定
-	public void setHealth(int health) {
-		this.health = health;
+	public void setHealth() {
 	}
-	public void setMagic(int magic) {
-		this.magic = magic;
+	public void setMagic() {
 	}
-	public void setAttack(int attack) {
-		this.attack = attack;
+	public void setAttack() {		
 	}
-	public void setSpeed(int speed) {
-		this.speed = speed;
+	public void setSpeed() {
 	}
-	public void setDefense(int defense) {
-		this.defense = defense;
+	public void setDefense() {
 	}
 	
 	
@@ -57,18 +52,6 @@ public class KeisyouSyori {
 		return this.defense;
 	}
 
-	//mainでset〇〇を呼び出すためにメソッドを作成
-	public void setHealth() {
-	}
-	public void setMagic() {
-	}
-	public void setAttack() {		
-	}
-	public void setSpeed() {
-	}
-	public void setDefense() {
-	}
-	
-}	
+}
 	
 
