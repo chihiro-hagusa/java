@@ -1,41 +1,44 @@
 package keisyou_syori;
 
-import java.util.Random;
-
 public class KeisyouSyori {
-	//private String name;
+	private String name;
 	private int health;
 	private int magic;
 	private int attack;
 	private int speed;
 	private int defense;
 	
-	
-	public KeisyouSyori() {
-        // ステータスをランダムな値で初期化
-        Random random = new Random();
-        this.health = random.nextInt(1000);
-        this.magic = random.nextInt(1000);
-        this.attack = random.nextInt(1000);
-        this.speed = random.nextInt(1000);
-        this.defense = random.nextInt(1000);
+	//KeisyouSyoriのコンストラクタの設定
+	public KeisyouSyori(String playerName) {
+        this.name = playerName;
     }
 	
 	
 	//setterの設定
-	public void setHealth() {
+	public void setName(String name) {
+		this.name = name;
 	}
-	public void setMagic() {
-	}
-	public void setAttack() {		
-	}
-	public void setSpeed() {
-	}
-	public void setDefense() {
-	}
-	
-	
+	public void setHealth(int health) {
+        this.health = health;
+    }
+    public void setMagic(int magic) {
+        this.magic = magic;
+    }
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+
+		
 	//getterの設定
+    public String getName() {
+        return this.name;
+    }
 	public int getHealth() {
 		return this.health;
 	}
@@ -52,6 +55,8 @@ public class KeisyouSyori {
 		return this.defense;
 	}
 
-}
+
 	
 
+}
+	

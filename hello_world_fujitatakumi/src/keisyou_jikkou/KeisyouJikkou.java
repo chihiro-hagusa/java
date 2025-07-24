@@ -1,9 +1,9 @@
 package keisyou_jikkou;
 
+import java.util.Random;
 //スキャナーをインポート
 import java.util.Scanner;
 
-import keisyou_syori.KeisyouSyori;
 //サブクラスをインポート
 import keisyou_syori.Player;
 
@@ -13,39 +13,22 @@ public class KeisyouJikkou {
 		Scanner scanner = new Scanner(System.in);
 		String playerName = scanner.nextLine();
 		
-		//処理側の呼び出し
-		KeisyouSyori obj = new KeisyouSyori();
+		//サブクラスの呼び出し
 		Player objP = new Player(playerName);
 		
-		//出力の処理
-		objP.setName(playerName);
-		playerName = objP.getName();
-		System.out.println("こんにちは「" + playerName + "」さん");
+		//ランダムの処理
+		Random random = new Random();
 		
-		System.out.println("ステータス");
+		//サブクラスのコンソール出力文にランダムの数字が入るように処理
+		objP.setHealth(random.nextInt(1000));
+		objP.setMagic(random.nextInt(1000));
+		objP.setAttack(random.nextInt(1000));
+		objP.setSpeed(random.nextInt(1000));
+		objP.setDefense(random.nextInt(1000));
 		
-		obj.setHealth();
-		int health = obj.getHealth();
-		System.out.println("HP : " + health);
+		//サブクラスのprintメソッドを呼び出し
+		objP.print();
 		
-		obj.setMagic();
-		int magic = obj.getMagic();
-        System.out.println("MP : " + magic);
-        
-        obj.setAttack();
-		int attack = obj.getAttack();
-        System.out.println("攻撃力 : " + attack);
-        
-        obj.setSpeed();
-		int speed = obj.getSpeed();
-        System.out.println("素早さ : " + speed);
-        
-        obj.setDefense();
-		int defense = obj.getDefense();
-        System.out.println("防御力 : " + defense);
-        
-        System.out.println("さあ冒険に出かけよう！");
-        
         scanner.close();
 	}
 
