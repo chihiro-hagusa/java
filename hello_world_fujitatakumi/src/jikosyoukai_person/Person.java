@@ -32,10 +32,15 @@ public class Person {
 	//問題8：インスタンスメソッド「print」を定義してください（戻り値：void）
 	//問題9：printメソッドの中でthisを用いて「名前は〇〇です」,「年は〇〇です」「BMIは○○です」と出力してください
 	public void print() {
+		System.out.println(name);
+	    System.out.println(age);
+	    System.out.println(height);
+	    System.out.println();
 		System.out.println("名前は" + this.name + "です");
-        System.out.println("年は" + this.age + "です");
+        System.out.println("年は" + this.age + "才です");
         String formattedBmi = String.format("%.1f", this.bmi());
         System.out.println("BMIは" + formattedBmi + "です");
+        System.out.println();
     }
 	
 	public static int getCount() {
